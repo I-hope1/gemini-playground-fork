@@ -8,7 +8,7 @@ export default {
 		if (request.headers.get('Upgrade') === 'websocket') {
 			return handleWebSocket(request, env);
 		}
-		console.log(url.pathname);
+		// console.log(url.pathname);
 
 		// 添加 API 请求处理
 		if (url.pathname.startsWith("/gemini") ||
